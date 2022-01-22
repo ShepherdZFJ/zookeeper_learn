@@ -6,8 +6,8 @@ import java.io.IOException;
 
 public class DistributeServer {
 
-    private String connectString = "hadoop102:2181,hadoop103:2181,hadoop104:2181";
-    private int sessionTimeout = 2000;
+    private String connectString = "10.10.0.18:2181";
+    private int sessionTimeout = 10000;
     private ZooKeeper zk;
 
     public static void main(String[] args) throws IOException, KeeperException, InterruptedException {
